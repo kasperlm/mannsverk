@@ -152,7 +152,7 @@ export function Products() {
   return (
     <section
       id="products"
-      className="py-32 px-6 max-w-6xl mx-auto"
+      className="py-12 px-6 max-w-6xl mx-auto"
       aria-labelledby="products-heading"
     >
       {/* Section header */}
@@ -168,9 +168,6 @@ export function Products() {
             Products
           </h2>
         </div>
-        <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-sm text-pretty">
-          Each product is designed to solve a specific problem with clean, reliable software.
-        </p>
       </div>
 
       {/* Product grid */}

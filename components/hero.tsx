@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { ArrowDown } from 'lucide-react'
 
 const lines = [
   '> Kasper Mannsverk',
@@ -60,7 +59,7 @@ function TerminalTyper() {
 export function Hero() {
   return (
     <section
-      className="relative min-h-screen flex flex-col justify-center px-6 pt-24 pb-16 max-w-6xl mx-auto"
+      className="relative flex flex-col justify-center px-6 pt-20 max-w-6xl mx-auto"
       aria-label="Hero"
     >
       {/* Grid lines background decoration */}
@@ -85,28 +84,6 @@ export function Hero() {
           </div>
           <TerminalTyper />
         </div>
-
-        {/* CTAs */}
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="#products"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-mono text-xs uppercase tracking-widest px-6 py-3 rounded hover:opacity-90 transition-opacity"
-          >
-            View products
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 border border-border text-foreground font-mono text-xs uppercase tracking-widest px-6 py-3 rounded hover:border-primary/50 hover:text-primary transition-all"
-          >
-            Start a project
-          </a>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground animate-bounce" aria-hidden="true">
-        <span className="font-mono text-xs uppercase tracking-widest">Scroll</span>
-        <ArrowDown size={14} />
       </div>
     </section>
   )
